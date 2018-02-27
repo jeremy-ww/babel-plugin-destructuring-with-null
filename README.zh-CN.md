@@ -2,7 +2,7 @@
 
 解决解构默认值只有在值为 undefined 时才能触发设置的默认值问题, 减少和后端沟通的时间. [（English Doc）](README.md)
 
-![Design Sketch](https://snag.gy/cd26O5.jpg)
+![Design Sketch](https://user-images.githubusercontent.com/11404005/36723286-cde25ed8-1bea-11e8-8e2b-32837b3098ec.png)
 
 ## 安装
 

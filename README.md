@@ -2,7 +2,7 @@
 
 Resolve the problem of the default value only trigged by its value is undefined in destructuring, Reduce time spent communicating with backends. [（中文文档）](README.zh-CN.md)
 
-![Design Sketch](https://snag.gy/cd26O5.jpg)
+![Design Sketch](https://user-images.githubusercontent.com/11404005/36723286-cde25ed8-1bea-11e8-8e2b-32837b3098ec.png)
 
 ## Install
 

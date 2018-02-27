@@ -2,26 +2,26 @@ version: 2
 
 jobs:
   build:
-    working_directory: ~/repo
     docker:
       - image: circleci/node:latest
+
+    working_directory: ~/repo
+
     branches:
       ignore:
         - gh-pages
+
     steps:
       - checkout
       - restore_cache:
-          key: dependency-cache-{{ checksum "package.json" }}
-      - run:
-          name: install dependences
-          command: npm i
+          - v1-dependencies-{{ checksum "package.json" }}
+          # fallback to using the latest cache if no exact match is found
+          - v1-dependencies-
+      - run: npm i
       - save_cache:
-          key: dependency-cache-{{ checksum "yarn" }}
+          key: v1-dependencies-{{ checksum "package.json" }}
           paths:
             - node_modules
       - run:
           name: lint
           command: npm run lint
-      - run:
-          name: test
-          command: npm run test

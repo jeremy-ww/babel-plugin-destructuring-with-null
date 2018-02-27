@@ -1,12 +1,20 @@
 {
   "name": "babel-plugin-destructuring-with-null",
   "version": "0.0.0",
-  "description": "",
+  "description": "A babel plugin to enhance deconstruction even with null",
   "main": "index.js",
   "scripts": {
     "lint": "eslint . --ignore-pattern '/test/fixtures' --fix"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Army-U/babel-plugin-destructuring-with-null.git"
+  },
   "author": "Army-U <wuchengkai0@gmail.com>",
+  "bugs": {
+    "url": "https://github.com/Army-U/babel-plugin-destructuring-with-null/issues"
+  },
+  "homepage": "https://github.com/Army-U/babel-plugin-destructuring-with-null#readme",
   "license": "MIT",
   "devDependencies": {
     "@babel/core": "7.0.0-beta.40",

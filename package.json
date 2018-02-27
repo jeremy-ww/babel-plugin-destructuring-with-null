@@ -1,0 +1,25 @@
+{
+  "name": "babel-plugin-destructuring-with-null",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint . --ignore-pattern '/test/fixtures' --fix"
+  },
+  "author": "Army-U <wuchengkai0@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "7.0.0-beta.40",
+    "@babel/preset-env": "7.0.0-beta.40",
+    "babel-core": "7.0.0-bridge.0",
+    "babel-eslint": "7.2.3",
+    "eslint": "4.17.0",
+    "eslint-config-standard": "11.0.0-beta.0",
+    "eslint-plugin-import": "2.8.0",
+    "eslint-plugin-node": "6.0.0",
+    "eslint-plugin-promise": "3.6.0",
+    "eslint-plugin-standard": "3.0.1",
+    "regenerator-runtime": "0.11.1"
+  },
+  "dependencies": {}
+}

@@ -1,0 +1,27 @@
+version: 2
+
+jobs:
+  build:
+    working_directory: ~/repo
+    docker:
+      - image: circleci/node:latest
+    branches:
+      ignore:
+        - gh-pages
+    steps:
+      - checkout
+      - restore_cache:
+          key: dependency-cache-{{ checksum "package.json" }}
+      - run:
+          name: install dependences
+          command: npm i
+      - save_cache:
+          key: dependency-cache-{{ checksum "yarn" }}
+          paths:
+            - node_modules
+      - run:
+          name: lint
+          command: npm run lint
+      - run:
+          name: test
+          command: npm run test

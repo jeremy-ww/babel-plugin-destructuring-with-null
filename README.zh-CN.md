@@ -23,7 +23,7 @@ name = _destructuring_with_null(_ref, 'name', 'tom');     // name === 'tom'
 
 const _list = {list: [false, null, undefined]},
 _list$list = _slicedToArray(_list.list, 3),
-first = _destructuring_with_null(_list$list, '1', 'foo'), // first === 'foo',
+first = _destructuring_with_null(_list$list, '1', 'foo'), // first  === 'foo',
 second = _destructuring_with_null(_list$list, '2', 'bar');// second === 'bar';
 ```
 

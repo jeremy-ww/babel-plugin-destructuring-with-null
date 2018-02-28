@@ -4,7 +4,8 @@
   "description": "A babel plugin to enhance deconstruction even with null",
   "main": "index.js",
   "scripts": {
-    "lint": "eslint . --ignore-pattern '/test/fixtures' --fix"
+    "lint": "eslint . ",
+    "lint:fix": "npm run lint --fix"
   },
   "repository": {
     "type": "git",

@@ -4,6 +4,8 @@ const plugin = require('../index')
 const path = require('path')
 const glob = require('glob')
 
+const dirname = path.join(__dirname, '..')
+
 describe('babel-plugin-destructuring-with-null', () => {
   const files = glob.sync('./test/fixtures/**/input.js')
 
@@ -17,7 +19,7 @@ describe('babel-plugin-destructuring-with-null', () => {
         require('@babel/plugin-proposal-object-rest-spread').default,
         plugin
       ]
-    }).code.replace(__dirname, '{{. __dirname}}')
+    }).code.replace(dirname, '{{. __dirname}}')
 
     test(`should work well with ${testcase}`, done => {
       expect(code).toBe(result)

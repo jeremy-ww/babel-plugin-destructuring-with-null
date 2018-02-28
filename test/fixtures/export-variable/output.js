@@ -1,4 +1,4 @@
-import _destructuring_with_null from "/Users/ckwu/Documents/project/babel-plugin-destructuring-with-null/get.js";
+import _destructuring_with_null from "{{. __dirname}}/get.js";
 let _ref = {},
     a = _ref.a,
     b = _ref.b,

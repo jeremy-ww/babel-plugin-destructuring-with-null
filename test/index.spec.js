@@ -5,7 +5,6 @@ const path = require('path')
 const glob = require('glob')
 
 describe('babel-plugin-destructuring-with-null', () => {
-
   const files = glob.sync('./test/fixtures/**/input.js')
 
   files.forEach(file => {

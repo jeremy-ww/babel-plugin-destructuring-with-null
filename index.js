@@ -147,8 +147,13 @@ module.exports = function (api, options = {}) {
       gatherNodeParts(valueRef, nodePartsArray)
 
       let currentValueRef = valueRef.object
-      while (currentValueRef.object) {
-        currentValueRef = currentValueRef.object
+
+      if (currentValueRef) {
+        while (currentValueRef.object) {
+          currentValueRef = currentValueRef.object
+        }
+      } else {
+        currentValueRef = valueRef
       }
 
       const nodeParts = nodePartsArray.join('$')
@@ -157,7 +162,7 @@ module.exports = function (api, options = {}) {
         .filter(part => part.length).join('.')
 
       const tempConditional = t.callExpression(t.identifier(destructuringFunc), [
-        t.identifier(currentValueRef.name || currentValueRef),
+        currentValueRef.name ? t.identifier(currentValueRef.name) : currentValueRef,
         t.stringLiteral(nodeParts),
         pattern.right
       ])

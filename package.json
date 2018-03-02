@@ -1,6 +1,6 @@
 {
   "name": "babel-plugin-destructuring-with-null",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "A babel plugin to enhance deconstruction even with null",
   "main": "index.js",
   "scripts": {

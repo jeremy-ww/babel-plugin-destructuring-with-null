@@ -1,4 +1,4 @@
-# babel-plugin-destructuring-with-null [![Build Status](https://img.shields.io/circleci/project/github/Army-U/babel-plugin-destructuring-with-null.svg?style=flat-square)](https://circleci.com/gh/Army-U/babel-plugin-destructuring-with-null) [![npm package](https://img.shields.io/npm/v/babel-plugin-destructuring-with-null.svg?style=flat-square)](https://www.npmjs.com/package/babel-plugin-destructuring-with-null)
+# babel-plugin-destructuring-with-null [![Build Status](https://flat.badgen.net/circleci/github/Army-U/babel-plugin-destructuring-with-null/master)](https://circleci.com/gh/Army-U/babel-plugin-destructuring-with-null) [![npm package](https://flat.badgen.net/npm/v/babel-plugin-destructuring-with-null)](https://www.npmjs.com/package/babel-plugin-destructuring-with-null)
 
 解决解构默认值只有在值为 undefined 时才能触发设置的默认值问题, 减少和后端沟通的时间. [（English Doc）](README.md)
 

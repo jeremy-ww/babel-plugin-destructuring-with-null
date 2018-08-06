@@ -1,4 +1,4 @@
-# babel-plugin-destructuring-with-null [![Build Status](https://img.shields.io/circleci/project/github/Army-U/babel-plugin-destructuring-with-null.svg?style=flat-square)](https://circleci.com/gh/Army-U/babel-plugin-destructuring-with-null) [![npm package](https://img.shields.io/npm/v/babel-plugin-destructuring-with-null.svg?style=flat-square)](https://www.npmjs.com/package/babel-plugin-destructuring-with-null)
+# babel-plugin-destructuring-with-null [![Build Status](https://flat.badgen.net/circleci/github/Army-U/babel-plugin-destructuring-with-null/master)](https://circleci.com/gh/Army-U/babel-plugin-destructuring-with-null) [![npm package](https://flat.badgen.net/npm/v/babel-plugin-destructuring-with-null)](https://www.npmjs.com/package/babel-plugin-destructuring-with-null)
 
 Resolve the problem of the default value only trigged by its value is undefined in destructuring, Reduce time spent communicating with backends. [（中文文档）](README.zh-CN.md)
 
